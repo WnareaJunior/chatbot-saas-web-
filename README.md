@@ -49,8 +49,8 @@ This project is licensed under the [MIT License](LICENSE).
 For support or inquiries, please contact us at 
 TBA
 
-##Costs
+## Costs
 
--GHL
--Zapier
--Domain
+- GHL
+- Zapier
+- Domain
