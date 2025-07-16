@@ -48,3 +48,8 @@ This project is licensed under the [MIT License](LICENSE).
 
 For support or inquiries, please contact us at 
 TBA
+
+#Costs
+-GHL
+-Zapier
+-Domain
