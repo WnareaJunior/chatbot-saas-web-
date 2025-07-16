@@ -357,6 +357,15 @@
             .pricing-card.featured {
                 transform: none;
             }
+
+            .about-preview div[style*="grid-template-columns"] {
+                grid-template-columns: 1fr !important;
+                gap: 2rem !important;
+            }
+
+            .about-preview div[style*="grid-template-columns: 1fr 1fr"] {
+                grid-template-columns: repeat(2, 1fr) !important;
+            }
         }
 
         /* Animations */
@@ -440,8 +449,7 @@
                 <h1>Transform Your Business with <span class="hero-gradient">AI Chatbots</span></h1>
                 <p>Automate customer service, boost sales, and enhance user experience with our enterprise-grade AI chatbot solutions. Easy installation, powerful maintenance, unlimited possibilities.</p>
                 <div class="hero-buttons">
-                    <a href="#" class="cta-button">Start Free Trial</a>
-                    <a href="#" class="secondary-button">Watch Demo</a>
+                    <a href="pages/contact.html" class="secondary-button">Talk to Our Team</a>
                 </div>
             </div>
         </div>
@@ -450,6 +458,36 @@
     <section class="features" id="features">
         <div class="container">
             <h2 class="section-title">Why Choose ChatBot Pro?</h2>
+            <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 4rem; align-items: center; margin-bottom: 4rem;">
+                <div>
+                    <h3 style="font-size: 1.8rem; color: #fff; margin-bottom: 1.5rem;">Built by Experienced Software Engineers</h3>
+                    <p style="color: #ccc; font-size: 1.1rem; line-height: 1.8; margin-bottom: 1.5rem;">
+                        Founded in 2025, ChatBot Pro combines cutting-edge AI technology with enterprise-grade reliability. Our founding team includes a current Microsoft Software Development Engineer and a former Progressive Software Development Engineer.
+                    </p>
+                    <p style="color: #ccc; font-size: 1.1rem; line-height: 1.8; margin-bottom: 2rem;">
+                        We're committed to providing 24/7 support and building the most reliable AI chatbot platform for businesses ready to embrace the future of customer service.
+                    </p>
+                    <a href="pages/about.html" class="secondary-button">Learn Our Story</a>
+                </div>
+                <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 2rem;">
+                    <div style="background: rgba(255, 255, 255, 0.05); padding: 2rem; border-radius: 15px; text-align: center; border: 1px solid rgba(255, 255, 255, 0.1);">
+                        <div style="font-size: 2.5rem; font-weight: 800; color: #667eea; margin-bottom: 0.5rem;">2025</div>
+                        <div style="color: #ccc;">Founded</div>
+                    </div>
+                    <div style="background: rgba(255, 255, 255, 0.05); padding: 2rem; border-radius: 15px; text-align: center; border: 1px solid rgba(255, 255, 255, 0.1);">
+                        <div style="font-size: 2.5rem; font-weight: 800; color: #667eea; margin-bottom: 0.5rem;">24/7</div>
+                        <div style="color: #ccc;">Support</div>
+                    </div>
+                    <div style="background: rgba(255, 255, 255, 0.05); padding: 2rem; border-radius: 15px; text-align: center; border: 1px solid rgba(255, 255, 255, 0.1);">
+                        <div style="font-size: 2.5rem; font-weight: 800; color: #667eea; margin-bottom: 0.5rem;">99.9%</div>
+                        <div style="color: #ccc;">Uptime Goal</div>
+                    </div>
+                    <div style="background: rgba(255, 255, 255, 0.05); padding: 2rem; border-radius: 15px; text-align: center; border: 1px solid rgba(255, 255, 255, 0.1);">
+                        <div style="font-size: 2.5rem; font-weight: 800; color: #667eea; margin-bottom: 0.5rem;">🚀</div>
+                        <div style="color: #ccc;">Enterprise Ready</div>
+                    </div>
+                </div>
+            </div>
             <div class="features-grid">
                 <div class="feature-card">
                     <div class="feature-icon">🚀</div>
@@ -500,7 +538,7 @@
                         <li>Email support</li>
                         <li>Website integration</li>
                     </ul>
-                    <a href="#" class="cta-button">Get Started</a>
+                    <a href="pages/contact.html" class="cta-button">Contact Us</a>
                 </div>
                 <div class="pricing-card featured">
                     <h3 class="plan-name">Professional</h3>
@@ -514,7 +552,7 @@
                         <li>Multi-platform integration</li>
                         <li>Custom branding</li>
                     </ul>
-                    <a href="#" class="cta-button">Get Started</a>
+                    <a href="pages/contact.html" class="cta-button">Contact Us</a>
                 </div>
                 <div class="pricing-card">
                     <h3 class="plan-name">Enterprise</h3>
@@ -528,9 +566,19 @@
                         <li>White-label solution</li>
                         <li>API access</li>
                     </ul>
-                    <a href="#" class="cta-button">Contact Sales</a>
+                    <a href="pages/contact.html" class="cta-button">Contact Sales</a>
                 </div>
             </div>
+        </div>
+    </section>
+
+    <section style="background: linear-gradient(135deg, #667eea 0%, #764ba2 100%); padding: 4rem 0; margin: 4rem 0;">
+        <div class="container" style="text-align: center;">
+            <h2 style="font-size: 2.5rem; font-weight: 700; color: #fff; margin-bottom: 1rem;">Ready to Get Started?</h2>
+            <p style="font-size: 1.2rem; color: rgba(255, 255, 255, 0.9); margin-bottom: 2rem; max-width: 600px; margin-left: auto; margin-right: auto;">
+                Ready to transform your customer experience? Contact our team to discuss your chatbot needs and get a custom solution.
+            </p>
+            <a href="pages/contact.html" class="cta-button" style="background: #fff; color: #667eea;">Contact Our Team</a>
         </div>
     </section>
 
