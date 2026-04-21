@@ -3,28 +3,19 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>ChatBot Pro - AI-Powered Business Solutions</title>
+    <title>Chatbot Pro - Your Business, Running 24/7</title>
     <style>
-        * {
-            margin: 0;
-            padding: 0;
-            box-sizing: border-box;
-        }
+        * { margin: 0; padding: 0; box-sizing: border-box; }
 
         body {
             font-family: 'Inter', -apple-system, BlinkMacSystemFont, sans-serif;
             line-height: 1.6;
-            color: #333;
+            color: #fff;
             background: #0a0a0a;
         }
 
-        .container {
-            max-width: 1200px;
-            margin: 0 auto;
-            padding: 0 20px;
-        }
+        .container { max-width: 1200px; margin: 0 auto; padding: 0 20px; }
 
-        /* Header */
         header {
             background: rgba(10, 10, 10, 0.95);
             backdrop-filter: blur(10px);
@@ -35,17 +26,11 @@
             border-bottom: 1px solid rgba(255, 255, 255, 0.1);
         }
 
-        nav {
-            display: flex;
-            justify-content: space-between;
-            align-items: center;
-            padding: 1rem 0;
-        }
+        nav { display: flex; justify-content: space-between; align-items: center; padding: 1rem 0; }
 
         .logo {
             font-size: 1.8rem;
             font-weight: 700;
-            color: #fff;
             text-decoration: none;
             background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
             -webkit-background-clip: text;
@@ -53,11 +38,7 @@
             background-clip: text;
         }
 
-        .nav-links {
-            display: flex;
-            gap: 2rem;
-            list-style: none;
-        }
+        .nav-links { display: flex; gap: 2rem; list-style: none; }
 
         .nav-links a {
             color: #fff;
@@ -66,9 +47,7 @@
             transition: color 0.3s ease;
         }
 
-        .nav-links a:hover {
-            color: #667eea;
-        }
+        .nav-links a:hover { color: #667eea; }
 
         .cta-button {
             background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
@@ -81,67 +60,12 @@
             cursor: pointer;
             transition: all 0.3s ease;
             box-shadow: 0 4px 15px rgba(102, 126, 234, 0.3);
+            display: inline-block;
         }
 
         .cta-button:hover {
             transform: translateY(-2px);
             box-shadow: 0 8px 25px rgba(102, 126, 234, 0.5);
-        }
-
-        /* Hero Section */
-        .hero {
-            background: linear-gradient(135deg, #0a0a0a 0%, #1a1a2e 50%, #16213e 100%);
-            padding: 120px 0 80px;
-            text-align: center;
-            position: relative;
-            overflow: hidden;
-        }
-
-        .hero::before {
-            content: '';
-            position: absolute;
-            top: 0;
-            left: 0;
-            right: 0;
-            bottom: 0;
-            background: url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1000 1000"><defs><pattern id="grid" width="100" height="100" patternUnits="userSpaceOnUse"><path d="M 100 0 L 0 0 0 100" fill="none" stroke="rgba(255,255,255,0.03)" stroke-width="1"/></pattern></defs><rect width="100%" height="100%" fill="url(%23grid)"/></svg>');
-            opacity: 0.3;
-        }
-
-        .hero-content {
-            position: relative;
-            z-index: 2;
-        }
-
-        .hero h1 {
-            font-size: 4rem;
-            font-weight: 800;
-            color: #fff;
-            margin-bottom: 1.5rem;
-            line-height: 1.1;
-        }
-
-        .hero-gradient {
-            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
-            -webkit-background-clip: text;
-            -webkit-text-fill-color: transparent;
-            background-clip: text;
-        }
-
-        .hero p {
-            font-size: 1.3rem;
-            color: #ccc;
-            margin-bottom: 2.5rem;
-            max-width: 600px;
-            margin-left: auto;
-            margin-right: auto;
-        }
-
-        .hero-buttons {
-            display: flex;
-            gap: 1rem;
-            justify-content: center;
-            flex-wrap: wrap;
         }
 
         .secondary-button {
@@ -153,520 +77,410 @@
             text-decoration: none;
             font-weight: 600;
             transition: all 0.3s ease;
+            display: inline-block;
         }
 
-        .secondary-button:hover {
-            background: #667eea;
-            transform: translateY(-2px);
-        }
+        .secondary-button:hover { background: #667eea; transform: translateY(-2px); }
 
-        /* Features Section */
-        .features {
-            padding: 100px 0;
-            background: #111;
-        }
-
-        .section-title {
+        .hero {
+            background: linear-gradient(135deg, #0a0a0a 0%, #1a1a2e 50%, #16213e 100%);
+            padding: 140px 0 100px;
             text-align: center;
-            font-size: 2.5rem;
-            font-weight: 700;
+            position: relative;
+            overflow: hidden;
+        }
+
+        .hero-content { position: relative; z-index: 2; }
+
+        .hero h1 {
+            font-size: 3.8rem;
+            font-weight: 800;
             color: #fff;
-            margin-bottom: 3rem;
+            margin-bottom: 1.5rem;
+            line-height: 1.15;
+            max-width: 820px;
+            margin-left: auto;
+            margin-right: auto;
         }
 
-        .features-grid {
+        .hero-gradient {
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
+        }
+
+        .hero p {
+            font-size: 1.25rem;
+            color: #bbb;
+            margin-bottom: 2.5rem;
+            max-width: 620px;
+            margin-left: auto;
+            margin-right: auto;
+        }
+
+        .section-title { text-align: center; font-size: 2.4rem; font-weight: 700; color: #fff; margin-bottom: 1rem; }
+
+        .section-subtitle {
+            text-align: center;
+            font-size: 1.1rem;
+            color: #999;
+            margin-bottom: 3.5rem;
+            max-width: 560px;
+            margin-left: auto;
+            margin-right: auto;
+        }
+
+        .why-it-works { padding: 100px 0; background: #111; }
+
+        .outcomes-grid {
             display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+            grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
             gap: 2rem;
-            margin-top: 3rem;
         }
 
-        .feature-card {
+        .outcome-card {
             background: rgba(255, 255, 255, 0.05);
             padding: 2.5rem;
             border-radius: 20px;
             border: 1px solid rgba(255, 255, 255, 0.1);
-            backdrop-filter: blur(10px);
             transition: all 0.3s ease;
         }
 
-        .feature-card:hover {
+        .outcome-card:hover {
             transform: translateY(-5px);
             box-shadow: 0 20px 40px rgba(102, 126, 234, 0.2);
+            border-color: rgba(102, 126, 234, 0.3);
         }
 
-        .feature-icon {
-            width: 60px;
-            height: 60px;
+        .outcome-icon {
+            width: 56px;
+            height: 56px;
             background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
-            border-radius: 15px;
+            border-radius: 14px;
             display: flex;
             align-items: center;
             justify-content: center;
             margin-bottom: 1.5rem;
-            font-size: 1.5rem;
+            font-size: 1.4rem;
         }
 
-        .feature-card h3 {
-            font-size: 1.5rem;
-            font-weight: 600;
-            color: #fff;
-            margin-bottom: 1rem;
-        }
+        .outcome-card h3 { font-size: 1.4rem; font-weight: 700; color: #fff; margin-bottom: 0.75rem; }
+        .outcome-card p { color: #aaa; line-height: 1.7; }
 
-        .feature-card p {
-            color: #ccc;
-            line-height: 1.6;
-        }
+        .testimonials { padding: 100px 0; background: #0a0a0a; }
 
-        /* Pricing Section */
-        .pricing {
-            padding: 100px 0;
-            background: #0a0a0a;
-        }
-
-        .pricing-grid {
+        .testimonials-grid {
             display: grid;
             grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
             gap: 2rem;
-            margin-top: 3rem;
         }
 
-        .pricing-card {
+        .testimonial-card {
+            background: rgba(255, 255, 255, 0.05);
+            padding: 2rem 2.5rem;
+            border-radius: 20px;
+            border: 1px solid rgba(255, 255, 255, 0.1);
+        }
+
+        .testimonial-quote {
+            font-size: 1.05rem;
+            color: #ccc;
+            line-height: 1.75;
+            margin-bottom: 1.5rem;
+            font-style: italic;
+        }
+
+        .testimonial-author { font-size: 0.9rem; font-weight: 600; color: #667eea; }
+
+        .how-it-works { padding: 100px 0; background: #111; }
+
+        .steps-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+            gap: 2rem;
+        }
+
+        .step-card {
             background: rgba(255, 255, 255, 0.05);
             padding: 2.5rem;
             border-radius: 20px;
             border: 1px solid rgba(255, 255, 255, 0.1);
             text-align: center;
-            position: relative;
             transition: all 0.3s ease;
         }
 
-        .pricing-card.featured {
-            border: 2px solid #667eea;
-            transform: scale(1.05);
-        }
+        .step-card:hover { transform: translateY(-5px); box-shadow: 0 20px 40px rgba(102, 126, 234, 0.15); }
 
-        .pricing-card:hover {
-            transform: translateY(-5px);
-            box-shadow: 0 20px 40px rgba(0, 0, 0, 0.3);
-        }
-
-        .pricing-card.featured:hover {
-            transform: scale(1.05) translateY(-5px);
-        }
-
-        .plan-name {
-            font-size: 1.5rem;
-            font-weight: 600;
-            color: #fff;
-            margin-bottom: 1rem;
-        }
-
-        .plan-price {
-            font-size: 3rem;
+        .step-number {
+            width: 56px;
+            height: 56px;
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin: 0 auto 1.5rem;
+            font-size: 1.4rem;
             font-weight: 800;
-            color: #667eea;
-            margin-bottom: 0.5rem;
+            color: #fff;
         }
 
-        .plan-period {
-            color: #ccc;
-            margin-bottom: 2rem;
-        }
+        .step-card h3 { font-size: 1.3rem; font-weight: 700; color: #fff; margin-bottom: 0.75rem; }
+        .step-card p { color: #aaa; line-height: 1.7; font-size: 0.97rem; }
 
-        .plan-features {
-            list-style: none;
-            margin-bottom: 2rem;
-        }
-
-        .plan-features li {
-            color: #ccc;
-            padding: 0.5rem 0;
-            border-bottom: 1px solid rgba(255, 255, 255, 0.1);
-        }
-
-        .plan-features li:last-child {
-            border-bottom: none;
-        }
-
-        /* Footer */
-        footer {
-            background: #111;
-            padding: 50px 0 20px;
+        .save-money {
+            padding: 100px 0;
+            background: #0a0a0a;
             text-align: center;
         }
 
+        .save-money .section-subtitle {
+            margin-bottom: 2.5rem;
+        }
+
+        .final-cta {
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            padding: 90px 0;
+            text-align: center;
+        }
+
+        .final-cta h2 { font-size: 2.6rem; font-weight: 800; color: #fff; margin-bottom: 1rem; }
+
+        .final-cta p {
+            font-size: 1.2rem;
+            color: rgba(255,255,255,0.88);
+            margin-bottom: 2.5rem;
+            max-width: 480px;
+            margin-left: auto;
+            margin-right: auto;
+        }
+
+        .final-cta .cta-button { background: #fff; color: #667eea; font-size: 1.05rem; padding: 1rem 2.5rem; }
+        .final-cta .cta-button:hover { background: rgba(255,255,255,0.92); box-shadow: 0 8px 30px rgba(0,0,0,0.2); }
+
+        footer { background: #111; padding: 48px 0 24px; }
+
         .footer-content {
-            display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-between;
+            align-items: flex-start;
             gap: 2rem;
             margin-bottom: 2rem;
         }
 
-        .footer-section h3 {
+        .footer-brand .logo { font-size: 1.5rem; }
+        .footer-brand p { color: #777; font-size: 0.9rem; margin-top: 0.6rem; max-width: 220px; }
+        .footer-links { display: flex; gap: 3rem; flex-wrap: wrap; }
+
+        .footer-link-group h4 {
             color: #fff;
-            margin-bottom: 1rem;
+            font-size: 0.85rem;
+            font-weight: 700;
+            text-transform: uppercase;
+            letter-spacing: 0.08em;
+            margin-bottom: 0.9rem;
         }
 
-        .footer-section a {
-            color: #ccc;
+        .footer-link-group a {
+            color: #888;
             text-decoration: none;
             display: block;
             margin-bottom: 0.5rem;
+            font-size: 0.9rem;
             transition: color 0.3s ease;
         }
 
-        .footer-section a:hover {
-            color: #667eea;
-        }
+        .footer-link-group a:hover { color: #667eea; }
 
         .footer-bottom {
-            border-top: 1px solid rgba(255, 255, 255, 0.1);
-            padding-top: 2rem;
-            color: #ccc;
+            border-top: 1px solid rgba(255,255,255,0.08);
+            padding-top: 1.5rem;
+            color: #666;
+            font-size: 0.88rem;
+            text-align: center;
         }
 
-        /* Responsive Design */
-        @media (max-width: 768px) {
-            .nav-links {
-                display: none;
-            }
-
-            .hero h1 {
-                font-size: 2.5rem;
-            }
-
-            .hero p {
-                font-size: 1.1rem;
-            }
-
-            .hero-buttons {
-                flex-direction: column;
-                align-items: center;
-            }
-
-            .features-grid {
-                grid-template-columns: 1fr;
-            }
-
-            .pricing-grid {
-                grid-template-columns: 1fr;
-            }
-
-            .pricing-card.featured {
-                transform: none;
-            }
-
-            .about-preview div[style*="grid-template-columns"] {
-                grid-template-columns: 1fr !important;
-                gap: 2rem !important;
-            }
-
-            .about-preview div[style*="grid-template-columns: 1fr 1fr"] {
-                grid-template-columns: repeat(2, 1fr) !important;
-            }
-        }
-
-        /* Animations */
         @keyframes fadeInUp {
-            from {
-                opacity: 0;
-                transform: translateY(30px);
-            }
-            to {
-                opacity: 1;
-                transform: translateY(0);
-            }
+            from { opacity: 0; transform: translateY(30px); }
+            to { opacity: 1; transform: translateY(0); }
         }
 
-        .fade-in {
-            animation: fadeInUp 0.8s ease-out;
-        }
+        .fade-in { animation: fadeInUp 0.8s ease-out; }
 
-        /* Floating particles effect */
-        .particles {
-            position: absolute;
-            width: 100%;
-            height: 100%;
-            overflow: hidden;
-            pointer-events: none;
-        }
-
-        .particle {
-            position: absolute;
-            background: rgba(102, 126, 234, 0.1);
-            border-radius: 50%;
-            animation: float 15s infinite linear;
-        }
-
-        @keyframes float {
-            0% {
-                transform: translateY(100vh) rotate(0deg);
-                opacity: 0;
-            }
-            10% {
-                opacity: 1;
-            }
-            90% {
-                opacity: 1;
-            }
-            100% {
-                transform: translateY(-100vh) rotate(360deg);
-                opacity: 0;
-            }
+        @media (max-width: 768px) {
+            .nav-links { display: none; }
+            .hero h1 { font-size: 2.4rem; }
+            .hero p { font-size: 1.1rem; }
+            .section-title { font-size: 2rem; }
+            .outcomes-grid, .testimonials-grid, .steps-grid { grid-template-columns: 1fr; }
+            .final-cta h2 { font-size: 2rem; }
+            .footer-content { flex-direction: column; }
+            .footer-links { gap: 2rem; }
         }
     </style>
 </head>
 <body>
+
     <header>
         <nav class="container">
-            <a href="#" class="logo">ChatBot Pro</a>
+            <a href="#" class="logo">Chatbot Pro</a>
             <ul class="nav-links">
-                <li><a href="#features">Features</a></li>
-                <li><a href="#pricing">Pricing</a></li>
+                <li><a href="#why-it-works">Why It Works</a></li>
+                <li><a href="#how-it-works">How It Works</a></li>
                 <li><a href="pages/about.html">About</a></li>
                 <li><a href="pages/contact.html">Contact</a></li>
             </ul>
-            <a href="./pages/contact.html" class="cta-button">Contact Us</a>
+            <a href="pages/contact.html" class="cta-button">Contact Us</a>
         </nav>
     </header>
 
     <section class="hero">
-        <div class="particles">
-            <div class="particle" style="left: 10%; width: 4px; height: 4px; animation-delay: 0s;"></div>
-            <div class="particle" style="left: 20%; width: 6px; height: 6px; animation-delay: 2s;"></div>
-            <div class="particle" style="left: 30%; width: 3px; height: 3px; animation-delay: 4s;"></div>
-            <div class="particle" style="left: 40%; width: 5px; height: 5px; animation-delay: 6s;"></div>
-            <div class="particle" style="left: 50%; width: 4px; height: 4px; animation-delay: 8s;"></div>
-            <div class="particle" style="left: 60%; width: 6px; height: 6px; animation-delay: 10s;"></div>
-            <div class="particle" style="left: 70%; width: 3px; height: 3px; animation-delay: 12s;"></div>
-            <div class="particle" style="left: 80%; width: 5px; height: 5px; animation-delay: 14s;"></div>
-            <div class="particle" style="left: 90%; width: 4px; height: 4px; animation-delay: 16s;"></div>
-        </div>
         <div class="container">
             <div class="hero-content fade-in">
-                <h1>Transform Your Business with <span class="hero-gradient">AI Chatbots</span></h1>
-                <p>Automate customer service, boost sales, and enhance user experience with our enterprise-grade AI chatbot solutions. Easy installation, powerful maintenance, unlimited possibilities.</p>
-                <div class="hero-buttons">
-                    <a href="pages/contact.html" class="secondary-button">Talk to Our Team</a>
-                </div>
+                <h1>Your Business, Running <span class="hero-gradient">24/7</span> &#8212; Without Hiring More Staff</h1>
+                <p>Chatbot Pro handles customer questions, books appointments, and captures leads automatically &#8212; so you can focus on growing your business.</p>
+                <a href="pages/contact.html" class="cta-button">Get Started Today</a>
             </div>
         </div>
     </section>
 
-    <section class="features" id="features">
+    <section class="why-it-works" id="why-it-works">
         <div class="container">
-            <h2 class="section-title">Why Choose ChatBot Pro?</h2>
-            <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 4rem; align-items: center; margin-bottom: 4rem;">
-                <div>
-                    <h3 style="font-size: 1.8rem; color: #fff; margin-bottom: 1.5rem;">Built by Experienced Software Engineers</h3>
-                    <p style="color: #ccc; font-size: 1.1rem; line-height: 1.8; margin-bottom: 1.5rem;">
-                        Founded in 2025, ChatBot Pro combines cutting-edge AI technology with enterprise-grade reliability. Our founding team includes a current Microsoft Software Development Engineer and a former Progressive Software Development Engineer.
-                    </p>
-                    <p style="color: #ccc; font-size: 1.1rem; line-height: 1.8; margin-bottom: 2rem;">
-                        We're committed to providing 24/7 support and building the most reliable AI chatbot platform for businesses ready to embrace the future of customer service.
-                    </p>
-                    <a href="pages/about.html" class="secondary-button">Learn Our Story</a>
+            <h2 class="section-title">Why It Works</h2>
+            <p class="section-subtitle">Real results for business owners &#8212; not tech demos.</p>
+            <div class="outcomes-grid">
+                <div class="outcome-card">
+                    <div class="outcome-icon">&#128176;</div>
+                    <h3>Never miss a lead again</h3>
+                    <p>Your chatbot replies instantly, day or night. Capture every inquiry before a competitor does &#8212; even at 2am on a Sunday.</p>
                 </div>
-                <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 2rem;">
-                    <div style="background: rgba(255, 255, 255, 0.05); padding: 2rem; border-radius: 15px; text-align: center; border: 1px solid rgba(255, 255, 255, 0.1);">
-                        <div style="font-size: 2.5rem; font-weight: 800; color: #667eea; margin-bottom: 0.5rem;">2025</div>
-                        <div style="color: #ccc;">Founded</div>
-                    </div>
-                    <div style="background: rgba(255, 255, 255, 0.05); padding: 2rem; border-radius: 15px; text-align: center; border: 1px solid rgba(255, 255, 255, 0.1);">
-                        <div style="font-size: 2.5rem; font-weight: 800; color: #667eea; margin-bottom: 0.5rem;">24/7</div>
-                        <div style="color: #ccc;">Support</div>
-                    </div>
-                    <div style="background: rgba(255, 255, 255, 0.05); padding: 2rem; border-radius: 15px; text-align: center; border: 1px solid rgba(255, 255, 255, 0.1);">
-                        <div style="font-size: 2.5rem; font-weight: 800; color: #667eea; margin-bottom: 0.5rem;">99.9%</div>
-                        <div style="color: #ccc;">Uptime Goal</div>
-                    </div>
-                    <div style="background: rgba(255, 255, 255, 0.05); padding: 2rem; border-radius: 15px; text-align: center; border: 1px solid rgba(255, 255, 255, 0.1);">
-                        <div style="font-size: 2.5rem; font-weight: 800; color: #667eea; margin-bottom: 0.5rem;">🚀</div>
-                        <div style="color: #ccc;">Enterprise Ready</div>
-                    </div>
+                <div class="outcome-card">
+                    <div class="outcome-icon">&#9200;</div>
+                    <h3>Cut support costs by up to 60%</h3>
+                    <p>Automate the questions your team answers over and over. Free them for work that actually grows revenue.</p>
                 </div>
-            </div>
-            <div class="features-grid">
-                <div class="feature-card">
-                    <div class="feature-icon">🚀</div>
-                    <h3>Quick Installation</h3>
-                    <p>Get your AI chatbot up and running in minutes with our one-click installation process. No technical expertise required.</p>
-                </div>
-                <div class="feature-card">
-                    <div class="feature-icon">🔧</div>
-                    <h3>24/7 Maintenance</h3>
-                    <p>Our expert team monitors and maintains your chatbot around the clock, ensuring optimal performance and uptime.</p>
-                </div>
-                <div class="feature-card">
-                    <div class="feature-icon">🧠</div>
-                    <h3>Advanced AI</h3>
-                    <p>Powered by cutting-edge natural language processing and machine learning algorithms for human-like conversations.</p>
-                </div>
-                <div class="feature-card">
-                    <div class="feature-icon">📊</div>
-                    <h3>Analytics Dashboard</h3>
-                    <p>Comprehensive insights into customer interactions, performance metrics, and conversation analytics.</p>
-                </div>
-                <div class="feature-card">
-                    <div class="feature-icon">🔒</div>
-                    <h3>Enterprise Security</h3>
-                    <p>Bank-level security with end-to-end encryption, GDPR compliance, and secure data handling.</p>
-                </div>
-                <div class="feature-card">
-                    <div class="feature-icon">🌐</div>
-                    <h3>Multi-Platform</h3>
-                    <p>Deploy across websites, mobile apps, social media, and messaging platforms from a single dashboard.</p>
+                <div class="outcome-card">
+                    <div class="outcome-icon">&#128640;</div>
+                    <h3>Set it up in days, not months</h3>
+                    <p>We handle everything. No IT team needed. You're live and earning faster than you think.</p>
                 </div>
             </div>
         </div>
     </section>
 
-    <section class="pricing" id="pricing">
+    <section class="testimonials">
         <div class="container">
-            <h2 class="section-title">Choose Your Plan</h2>
-            <div class="pricing-grid">
-                <div class="pricing-card">
-                    <h3 class="plan-name">Starter</h3>
-                    <div class="plan-price">$200</div>
-                    <div class="plan-period">per month</div>
-                    <ul class="plan-features">
-                        <li>1 Chatbot</li>
-                        <li>1,000 conversations/month</li>
-                        <li>Basic analytics</li>
-                        <li>Email support</li>
-                        <li>Website integration</li>
-                    </ul>
-                    <a href="pages/contact.html" class="cta-button">Contact Us</a>
+            <h2 class="section-title">What Business Owners Are Saying</h2>
+            <p class="section-subtitle">Real outcomes from real businesses.</p>
+            <div class="testimonials-grid">
+                <div class="testimonial-card">
+                    <p class="testimonial-quote">We stopped losing leads after hours. Revenue is up 30% in just 3 months. I wish I had done this sooner.</p>
+                    <div class="testimonial-author">Sarah M. &#8212; Salon Owner</div>
                 </div>
-                <div class="pricing-card featured">
-                    <h3 class="plan-name">Professional</h3>
-                    <div class="plan-price">$300</div>
-                    <div class="plan-period">per month</div>
-                    <ul class="plan-features">
-                        <li>5 Chatbots</li>
-                        <li>10,000 conversations/month</li>
-                        <li>Advanced analytics</li>
-                        <li>Priority support</li>
-                        <li>Multi-platform integration</li>
-                        <li>Custom branding</li>
-                    </ul>
-                    <a href="pages/contact.html" class="cta-button">Contact Us</a>
+                <div class="testimonial-card">
+                    <p class="testimonial-quote">Our chatbot answers product questions and handles returns automatically. We cut our support workload in half and our team finally has time to focus on growth.</p>
+                    <div class="testimonial-author">James T. &#8212; E-commerce Store Owner</div>
                 </div>
-                <div class="pricing-card">
-                    <h3 class="plan-name">Enterprise</h3>
-                    <div class="plan-price">$Starting at $500</div>
-                    <div class="plan-period">per month</div>
-                    <ul class="plan-features">
-                        <li>Unlimited chatbots</li>
-                        <li>Unlimited conversations</li>
-                        <li>Custom AI training</li>
-                        <li>Dedicated support</li>
-                        <li>White-label solution</li>
-                        <li>API access</li>
-                    </ul>
-                    <a href="pages/contact.html" class="cta-button">Contact Sales</a>
+                <div class="testimonial-card">
+                    <p class="testimonial-quote">Buyers now get instant answers on listings 24/7. We have booked more consultations this quarter than all of last year combined.</p>
+                    <div class="testimonial-author">Maria R. &#8212; Real Estate Agency</div>
                 </div>
             </div>
         </div>
     </section>
 
-    <section style="background: linear-gradient(135deg, #667eea 0%, #764ba2 100%); padding: 4rem 0; margin: 4rem 0;">
-        <div class="container" style="text-align: center;">
-            <h2 style="font-size: 2.5rem; font-weight: 700; color: #fff; margin-bottom: 1rem;">Ready to Get Started?</h2>
-            <p style="font-size: 1.2rem; color: rgba(255, 255, 255, 0.9); margin-bottom: 2rem; max-width: 600px; margin-left: auto; margin-right: auto;">
-                Ready to transform your customer experience? Contact our team to discuss your chatbot needs and get a custom solution.
-            </p>
-            <a href="pages/contact.html" class="cta-button" style="background: #fff; color: #667eea;">Contact Our Team</a>
+    <section class="how-it-works" id="how-it-works">
+        <div class="container">
+            <h2 class="section-title">How It Works</h2>
+            <p class="section-subtitle">Three simple steps. We do the heavy lifting.</p>
+            <div class="steps-grid">
+                <div class="step-card">
+                    <div class="step-number">1</div>
+                    <h3>We learn your business</h3>
+                    <p>Tell us about your customers and the questions they ask most. We will do a short onboarding call &#8212; no paperwork, no homework.</p>
+                </div>
+                <div class="step-card">
+                    <div class="step-number">2</div>
+                    <h3>We build your chatbot</h3>
+                    <p>Custom-trained for your industry and your tone. It sounds like you &#8212; not a robot. We handle every technical detail.</p>
+                </div>
+                <div class="step-card">
+                    <div class="step-number">3</div>
+                    <h3>You start capturing leads</h3>
+                    <p>Go live in days. We handle maintenance forever. You just watch the inquiries come in around the clock.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="save-money">
+        <div class="container">
+            <h2 class="section-title">Ready to Save Money?</h2>
+            <p class="section-subtitle">Find out how much time and money you could save with a chatbot built for your business. No commitment, no pressure.</p>
+            <a href="pages/contact.html" class="cta-button">Contact Us Today</a>
+        </div>
+    </section>
+
+    <section class="final-cta">
+        <div class="container">
+            <h2>Stop Losing Business After Hours</h2>
+            <p>Every unanswered message is a missed sale. Let's fix that.</p>
+            <a href="pages/contact.html" class="cta-button">Talk to Our Team</a>
         </div>
     </section>
 
     <footer>
         <div class="container">
             <div class="footer-content">
-                <div class="footer-section">
-                    <h3>Product</h3>
-                    <a href="#">Features</a>
-                    <a href="#">Pricing</a>
-                    <a href="#">Integrations</a>
-                    <a href="#">API</a>
+                <div class="footer-brand">
+                    <a href="#" class="logo">Chatbot Pro</a>
+                    <p>Done-for-you AI chatbots for business owners who want to grow.</p>
                 </div>
-                <div class="footer-section">
-                    <h3>Company</h3>
-                    <a href="#">About Us</a>
-                    <a href="#">Careers</a>
-                    <a href="#">Blog</a>
-                    <a href="#">Press</a>
-                </div>
-                <div class="footer-section">
-                    <h3>Support</h3>
-                    <a href="#">Help Center</a>
-                    <a href="#">Contact</a>
-                    <a href="#">Status</a>
-                    <a href="#">Security</a>
-                </div>
-                <div class="footer-section">
-                    <h3>Legal</h3>
-                    <a href="#">Privacy Policy</a>
-                    <a href="#">Terms of Service</a>
-                    <a href="#">Cookie Policy</a>
-                    <a href="#">GDPR</a>
+                <div class="footer-links">
+                    <div class="footer-link-group">
+                        <h4>Product</h4>
+                        <a href="#why-it-works">Features</a>
+                    </div>
+                    <div class="footer-link-group">
+                        <h4>Company</h4>
+                        <a href="pages/about.html">About Us</a>
+                        <a href="pages/contact.html">Contact</a>
+                    </div>
+                    <div class="footer-link-group">
+                        <h4>Legal</h4>
+                        <a href="#">Privacy Policy</a>
+                        <a href="#">Terms of Service</a>
+                    </div>
                 </div>
             </div>
             <div class="footer-bottom">
-                <p>&copy; 2025 ChatBot Pro. All rights reserved.</p>
+                <p>&copy; 2025 Chatbot Pro. All rights reserved.</p>
             </div>
         </div>
     </footer>
 
     <script>
-        // Smooth scrolling for navigation links
         document.querySelectorAll('a[href^="#"]').forEach(anchor => {
             anchor.addEventListener('click', function (e) {
                 e.preventDefault();
                 const target = document.querySelector(this.getAttribute('href'));
-                if (target) {
-                    target.scrollIntoView({
-                        behavior: 'smooth',
-                        block: 'start'
-                    });
-                }
+                if (target) target.scrollIntoView({ behavior: 'smooth', block: 'start' });
             });
         });
 
-        // Add scroll effect to header
         window.addEventListener('scroll', () => {
-            const header = document.querySelector('header');
-            if (window.scrollY > 100) {
-                header.style.background = 'rgba(10, 10, 10, 0.98)';
-            } else {
-                header.style.background = 'rgba(10, 10, 10, 0.95)';
-            }
+            document.querySelector('header').style.background = window.scrollY > 100
+                ? 'rgba(10,10,10,0.98)' : 'rgba(10,10,10,0.95)';
         });
+    </script>
 
-        // Intersection Observer for animations
-        const observerOptions = {
-            threshold: 0.1,
-            rootMargin: '0px 0px -50px 0px'
-        };
-
-        const observer = new IntersectionObserver((entries) => {
-            entries.forEach(entry => {
-                if (entry.isIntersecting) {
-                    entry.target.style.animation = 'fadeInUp 0.8s ease-out';
-                }
-            });
-        }, observerOptions);
-
-        // Observe all cards
-        document.querySelectorAll('.feature-card, .pricing-card').forEach(card => {
-            observer.observe(card);
-        });
-    <script 
+    <script
       src="https://widgets.leadconnectorhq.com/loader.js"
-      data-resources-url="https://widgets.leadconnectorhq.com/chat-widget/loader.js" 
-     data-widget-id="687eb43481758b752a3c0612"   > 
-     </script>
+      data-resources-url="https://widgets.leadconnectorhq.com/chat-widget/loader.js"
+      data-widget-id="687eb43481758b752a3c0612">
+    </script>
+
 </body>
 </html>
